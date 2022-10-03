@@ -40,6 +40,8 @@ include "includes/admin_header.php";
     include "includes/view_all_posts.php";
     break;
 }
+
+
   ?>
 
 

@@ -13,6 +13,11 @@
     </tr>
   </thead>
   <tbody>
+
+
+  <?php
+  if(isset($_GET))
+  ?>
     <?php
 
     $query = "SELECT * FROM posts";
@@ -40,20 +45,10 @@
       echo "<td>$post_tags</td>";
       echo "<td>$post_comment_count</td>";
       echo "<td>$post_date</td>";
+      echo "<td><a href=''>Delete</a></td>";
       echo "</tr>";
     }
     ?>
-    <!--  <tr>
 
-      <td>10</td>
-      <td>Me</td>
-      <td>Bootstrap</td>
-      <td>CSS</td>
-      <td>Published</td>
-      <td>Image</td>
-      <td>some tags</td>
-      <td>Comments</td>
-      <td>Date</td>
-    </tr> -->
   </tbody>
 </table>
